@@ -1,0 +1,10 @@
+@use "../abstracts/fonts" as *;
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: $fs-500;
+}
+
+.attribution {
+  font-size: 11px;
+}

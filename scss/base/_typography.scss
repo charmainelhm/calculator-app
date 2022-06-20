@@ -12,3 +12,13 @@ body {
 .theme-toggler {
   font-size: $fs-100;
 }
+
+.btn--secondary,
+.btn--accent {
+  font-size: $fs-200;
+  text-transform: uppercase;
+}
+
+// .btn--accent {
+//   font-size: $fs-100;
+// }

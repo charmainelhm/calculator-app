@@ -1,0 +1,19 @@
+.keypad {
+  min-height: 400px;
+  padding: 2.4rem;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1.5rem;
+
+  button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn--expanded {
+    grid-column-end: span 2;
+  }
+}

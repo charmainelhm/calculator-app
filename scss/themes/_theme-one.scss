@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as mix;
 
 .t1 {
   background-color: $t1-bg-main;
@@ -14,5 +15,27 @@
     span {
       background-color: $t1-accent-main;
     }
+  }
+
+  .keypad {
+    background-color: $t1-bg-keypad;
+  }
+
+  .btn--primary {
+    @include mix.button-shadow($t1-key-shadow);
+    background-color: $t1-key;
+    color: $t1-text;
+  }
+
+  .btn--secondary {
+    @include mix.button-shadow($t1-accent-sub-shadow);
+    background-color: $t1-accent-sub;
+    color: $white;
+  }
+
+  .btn--accent {
+    @include mix.button-shadow($t1-accent-main-shadow);
+    background-color: $t1-accent-main;
+    color: $white;
   }
 }

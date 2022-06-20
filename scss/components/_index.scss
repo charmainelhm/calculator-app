@@ -1,10 +1,6 @@
 @forward "attribution";
 @forward "links";
 @forward "theme-toggler";
-@forward "keypad";
+@forward "buttons";
 @forward "display";
 @forward "container";
-
-body > *:not(:last-child) {
-  margin-bottom: 2.5rem;
-}

@@ -8,12 +8,6 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 1.5rem;
 
-  button {
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
   .btn--expanded {
     grid-column-end: span 2;
   }

@@ -5,12 +5,17 @@ body {
   font-size: $fs-500;
 }
 
+h1 {
+  font-size: $fs-500;
+}
+
 .attribution {
   font-size: 11px;
 }
 
 .theme-toggler {
   font-size: $fs-100;
+  letter-spacing: 1px;
 }
 
 .btn--secondary,

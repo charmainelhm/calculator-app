@@ -4,6 +4,10 @@
 .t1 {
   background-color: $t1-bg-main;
 
+  h1 {
+    color: $white;
+  }
+
   span,
   label {
     color: $white;

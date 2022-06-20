@@ -6,3 +6,8 @@
 @mixin button-shadow($color) {
   box-shadow: inset 0 -5px 0 0 $color;
 }
+
+@mixin content-bg($pd-block: 2.4rem) {
+  border-radius: 15px;
+  padding: $pd-block 2.4rem;
+}

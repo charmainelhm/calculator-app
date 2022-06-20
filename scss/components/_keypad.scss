@@ -1,7 +1,10 @@
+@use "../abstracts/mixins" as mix;
+
 .keypad {
+  @include mix.content-bg;
   min-height: 400px;
-  padding: 2.4rem;
-  border-radius: 15px;
+  //   padding: 2.4rem;
+  //   border-radius: 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);

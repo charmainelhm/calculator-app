@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as mix;
+
+.display {
+  @include mix.content-bg(2.6rem);
+  text-align: right;
+}

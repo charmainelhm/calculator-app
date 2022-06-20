@@ -21,6 +21,14 @@
     background-color: $t1-bg-keypad;
   }
 
+  .display {
+    background-color: $t1-bg-screen;
+
+    p {
+      color: $white;
+    }
+  }
+
   .btn--primary {
     @include mix.button-shadow($t1-key-shadow);
     background-color: $t1-key;

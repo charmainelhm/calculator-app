@@ -1,0 +1,63 @@
+@use "../abstracts/mixins" as mix;
+
+.theme-toggler {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 3rem;
+
+  .title {
+    text-transform: uppercase;
+  }
+}
+
+.toggle {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__label {
+    padding-inline: 5px;
+    margin-bottom: 2px;
+  }
+
+  & > * {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.toggle__switch {
+  background-color: grey;
+  padding: 4px 3px;
+  border-radius: 30px;
+  position: relative;
+
+  input {
+    @include mix.switch-size;
+    opacity: 0;
+  }
+
+  span {
+    @include mix.switch-size;
+    display: block;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    transition: all 0.2s ease-in;
+  }
+}
+
+#t1:checked ~ span {
+  left: 4px;
+}
+
+#t2:checked ~ span {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#t3:checked ~ span {
+  left: 100%;
+  transform: translateX(-22px);
+}

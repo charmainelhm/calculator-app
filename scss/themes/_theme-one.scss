@@ -1,0 +1,18 @@
+@use "../abstracts/colors" as *;
+
+.t1 {
+  background-color: $t1-bg-main;
+
+  span,
+  label {
+    color: $white;
+  }
+
+  .toggle__switch {
+    background-color: $t1-bg-keypad;
+
+    span {
+      background-color: $t1-accent-main;
+    }
+  }
+}

@@ -11,3 +11,10 @@
   border-radius: 15px;
   padding: $pd-block 2.4rem;
 }
+
+@mixin hover-focus-state($color, $degree) {
+  &:hover,
+  &:focus {
+    background-color: lighten($color, $degree);
+  }
+}

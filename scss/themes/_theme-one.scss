@@ -4,12 +4,10 @@
 .t1 {
   background-color: $t1-bg-main;
 
-  h1 {
-    color: $white;
-  }
-
+  h1,
   span,
-  label {
+  label,
+  .attribution {
     color: $white;
   }
 
@@ -18,6 +16,7 @@
 
     span {
       background-color: $t1-accent-main;
+      @include mix.hover-focus-state($t1-accent-main, 10%);
     }
   }
 
@@ -37,17 +36,33 @@
     @include mix.button-shadow($t1-key-shadow);
     background-color: $t1-key;
     color: $t1-text;
+    @include mix.hover-focus-state($t1-key, 20%);
   }
 
   .btn--secondary {
     @include mix.button-shadow($t1-accent-sub-shadow);
     background-color: $t1-accent-sub;
     color: $white;
+    @include mix.hover-focus-state($t1-accent-sub, 15%);
   }
 
   .btn--accent {
     @include mix.button-shadow($t1-accent-main-shadow);
     background-color: $t1-accent-main;
     color: $white;
+    @include mix.hover-focus-state($t1-accent-main, 20%);
+  }
+
+  .attribution a {
+    color: $t1-key;
+
+    &:visited {
+      color: darken($t1-key, 20%);
+    }
+
+    &:hover,
+    &:focus {
+      color: lighten($t1-accent-main, 20%);
+    }
   }
 }

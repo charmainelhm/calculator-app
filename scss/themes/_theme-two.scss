@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as mix;
+
+.t2 {
+  background-color: $t2-bg-main;
+
+  h1,
+  span,
+  label,
+  .attribution {
+    color: $t2-text;
+  }
+
+  .toggle__switch {
+    background-color: $t2-bg-keypad;
+
+    span {
+      background-color: $t2-accent-main;
+      @include mix.hover-focus-state($t2-accent-main, 20%);
+    }
+  }
+
+  .keypad {
+    background-color: $t2-bg-keypad;
+  }
+
+  .display {
+    background-color: $t2-bg-screen;
+
+    p {
+      color: $t2-text;
+    }
+  }
+
+  .btn--primary {
+    @include mix.button-shadow($t2-key-shadow);
+    background-color: $t2-key;
+    color: $t2-text;
+    @include mix.hover-focus-state($t2-key, 20%);
+  }
+
+  .btn--secondary {
+    @include mix.button-shadow($t2-accent-sub-shadow);
+    background-color: $t2-accent-sub;
+    color: $white;
+    @include mix.hover-focus-state($t2-accent-sub, 20%);
+  }
+
+  .btn--accent {
+    @include mix.button-shadow($t2-accent-main-shadow);
+    background-color: $t2-accent-main;
+    color: $white;
+    @include mix.hover-focus-state($t2-accent-main, 20%);
+  }
+
+  .attribution a {
+    color: $t2-accent-sub;
+
+    &:visited {
+      color: darken($t2-accent-sub, 30%);
+    }
+
+    &:hover,
+    &:focus {
+      color: $t2-accent-main;
+    }
+  }
+}

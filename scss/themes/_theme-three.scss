@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as mix;
+
+.t3 {
+  background-color: $t3-bg-main;
+
+  h1,
+  span,
+  label,
+  .attribution {
+    color: $t3-text-main;
+  }
+
+  .toggle__switch {
+    background-color: $t3-bg-keypad;
+
+    span {
+      background-color: $t3-accent-main;
+      @include mix.hover-focus-state($t3-accent-main, 30%); //   &:hover,
+    }
+  }
+
+  .keypad {
+    background-color: $t3-bg-keypad;
+  }
+
+  .display {
+    background-color: $t3-bg-keypad;
+
+    p {
+      color: $t3-text-main;
+    }
+  }
+
+  .btn--primary {
+    @include mix.button-shadow($t3-key-shadow);
+    background-color: $t3-key;
+    color: $t3-text-main;
+    @include mix.hover-focus-state($t3-key, 30%);
+  }
+
+  .btn--secondary {
+    @include mix.button-shadow($t3-accent-sub-shadow);
+    background-color: $t3-accent-sub;
+    color: $white;
+    @include mix.hover-focus-state($t3-accent-sub, 15%);
+  }
+
+  .btn--accent {
+    @include mix.button-shadow($t3-accent-main-shadow);
+    background-color: $t3-accent-main;
+    color: $t3-text-sub;
+    @include mix.hover-focus-state($t3-accent-main, 30%);
+  }
+
+  .attribution a {
+    color: $t3-accent-main;
+
+    &:visited {
+      color: darken($t3-accent-main, 10%);
+    }
+
+    &:hover,
+    &:focus {
+      color: lighten($t3-accent-main, 20%);
+    }
+  }
+}

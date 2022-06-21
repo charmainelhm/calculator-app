@@ -24,6 +24,10 @@ h1 {
   text-transform: uppercase;
 }
 
-.display__content {
+.display__prev {
+  font-size: $fs-200;
+}
+
+.display__current {
   font-size: $fs-xl;
 }

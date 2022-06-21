@@ -46,31 +46,34 @@
       </div>
     </header>
     <div class="display">
-      <p class="display__content">0</p>
+      <p class="display__prev"></p>
+      <p class="display__current">0</p>
     </div>
     <div class="keypad">
-      <button class="btn--primary">7</button>
-      <button class="btn--primary">8</button>
-      <button class="btn--primary">9</button>
-      <button class="btn--secondary">Del</button>
+      <button class="btn--primary" data-type="num">7</button>
+      <button class="btn--primary" data-type="num">8</button>
+      <button class="btn--primary" data-type="num">9</button>
+      <button class="btn--secondary" data-type="del">Del</button>
 
-      <button class="btn--primary">4</button>
-      <button class="btn--primary">5</button>
-      <button class="btn--primary">6</button>
-      <button class="btn--primary">+</button>
+      <button class="btn--primary" data-type="num">4</button>
+      <button class="btn--primary" data-type="num">5</button>
+      <button class="btn--primary" data-type="num">6</button>
+      <button class="btn--primary" data-type="operator">+</button>
 
-      <button class="btn--primary">1</button>
-      <button class="btn--primary">2</button>
-      <button class="btn--primary">3</button>
-      <button class="btn--primary">-</button>
+      <button class="btn--primary" data-type="num">1</button>
+      <button class="btn--primary" data-type="num">2</button>
+      <button class="btn--primary" data-type="num">3</button>
+      <button class="btn--primary" data-type="operator">-</button>
 
-      <button class="btn--primary">.</button>
-      <button class="btn--primary">0</button>
-      <button class="btn--primary">/</button>
-      <button class="btn--primary">x</button>
+      <button class="btn--primary" data-type="num">.</button>
+      <button class="btn--primary" data-type="num">0</button>
+      <button class="btn--primary" data-type="operator">/</button>
+      <button class="btn--primary" data-type="operator">x</button>
 
-      <button class="btn--secondary btn--expanded">Reset</button>
-      <button class="btn--accent btn--expanded">=</button>
+      <button class="btn--secondary btn--expanded" data-type="reset">
+        Reset
+      </button>
+      <button class="btn--accent btn--expanded" data-type="submit">=</button>
     </div>
     <div class="attribution">
       Challenge by

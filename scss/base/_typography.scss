@@ -29,5 +29,11 @@ h1 {
 }
 
 .display__current {
-  font-size: $fs-xl;
+  font-size: $fs-600;
+}
+
+@media screen and (min-width: 900px) {
+  .display__current {
+    font-size: $fs-xl;
+  }
 }

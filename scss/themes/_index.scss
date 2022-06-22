@@ -1,3 +1,9 @@
 @forward "theme-one";
 @forward "theme-two";
 @forward "theme-three";
+
+body {
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}

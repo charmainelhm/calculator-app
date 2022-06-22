@@ -15,8 +15,7 @@
 @mixin hover-focus-state($color, $degree) {
   transition: all 0.2s ease-in;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: lighten($color, $degree);
   }
 }
